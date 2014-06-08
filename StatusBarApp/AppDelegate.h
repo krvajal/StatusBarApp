@@ -8,8 +8,12 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate,NSWindowDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
+
+@property (weak) IBOutlet NSMenu *menu;
+- (IBAction)showProperties:(id)sender;
+
+@property (weak) IBOutlet NSMenuItem *quit;
 
 @end

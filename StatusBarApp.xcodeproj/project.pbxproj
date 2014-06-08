@@ -18,6 +18,9 @@
 		E8A8C86E19398B3800C4AF9E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8A8C84D19398B3700C4AF9E /* Cocoa.framework */; };
 		E8A8C87619398B3800C4AF9E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E8A8C87419398B3800C4AF9E /* InfoPlist.strings */; };
 		E8A8C87819398B3800C4AF9E /* StatusBarAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A8C87719398B3800C4AF9E /* StatusBarAppTests.m */; };
+		E8A8C886193992A500C4AF9E /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A8C884193992A500C4AF9E /* MainWindowController.m */; };
+		E8A8C887193992A500C4AF9E /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8A8C885193992A500C4AF9E /* MainWindowController.xib */; };
+		E8A8C889193993DF00C4AF9E /* SmallWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8A8C888193993DF00C4AF9E /* SmallWindow.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,10 @@
 		E8A8C87319398B3800C4AF9E /* StatusBarAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StatusBarAppTests-Info.plist"; sourceTree = "<group>"; };
 		E8A8C87519398B3800C4AF9E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E8A8C87719398B3800C4AF9E /* StatusBarAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatusBarAppTests.m; sourceTree = "<group>"; };
+		E8A8C883193992A500C4AF9E /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
+		E8A8C884193992A500C4AF9E /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
+		E8A8C885193992A500C4AF9E /* MainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
+		E8A8C888193993DF00C4AF9E /* SmallWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SmallWindow.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +125,12 @@
 				E8A8C85F19398B3700C4AF9E /* AppDelegate.h */,
 				E8A8C86019398B3700C4AF9E /* AppDelegate.m */,
 				E8A8C86219398B3800C4AF9E /* MainMenu.xib */,
+				E8A8C888193993DF00C4AF9E /* SmallWindow.xib */,
 				E8A8C86519398B3800C4AF9E /* Images.xcassets */,
 				E8A8C85419398B3700C4AF9E /* Supporting Files */,
+				E8A8C883193992A500C4AF9E /* MainWindowController.h */,
+				E8A8C884193992A500C4AF9E /* MainWindowController.m */,
+				E8A8C885193992A500C4AF9E /* MainWindowController.xib */,
 			);
 			path = StatusBarApp;
 			sourceTree = "<group>";
@@ -233,7 +244,9 @@
 				E8A8C85819398B3700C4AF9E /* InfoPlist.strings in Resources */,
 				E8A8C86619398B3800C4AF9E /* Images.xcassets in Resources */,
 				E8A8C85E19398B3700C4AF9E /* Credits.rtf in Resources */,
+				E8A8C887193992A500C4AF9E /* MainWindowController.xib in Resources */,
 				E8A8C86419398B3800C4AF9E /* MainMenu.xib in Resources */,
+				E8A8C889193993DF00C4AF9E /* SmallWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8A8C886193992A500C4AF9E /* MainWindowController.m in Sources */,
 				E8A8C86119398B3700C4AF9E /* AppDelegate.m in Sources */,
 				E8A8C85A19398B3700C4AF9E /* main.m in Sources */,
 			);
@@ -464,6 +478,7 @@
 				E8A8C87D19398B3800C4AF9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E8A8C87E19398B3800C4AF9E /* Build configuration list for PBXNativeTarget "StatusBarAppTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +487,7 @@
 				E8A8C88019398B3800C4AF9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
